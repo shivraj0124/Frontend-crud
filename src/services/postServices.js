@@ -2,7 +2,7 @@ import axios from "axios";
 
 class Post {
   create(formData) {
-    const url = "https://crud-backend-swart.vercel.app/api/create-post";
+    const url = "https://backend-crud-sk.vercel.app/api/create-post";
 
     const config = {
       headers: {
@@ -14,21 +14,21 @@ class Post {
 
   getPost() {
 
-    const url = "https://crud-backend-swart.vercel.app/api/get-post";
+    const url = "https://backend-crud-sk.vercel.app/api/get-post";
 
     return axios.get(url);
   }
 
   deletePost(id) {
 
-    const url = "https://crud-backend-swart.vercel.app/api/delete-post/" + id;
+    const url = "https://backend-crud-sk.vercel.app/api/delete-post/" + id;
 
     return axios.get(url);
   }
 
   update(formData) {
 
-    const url = "https://crud-backend-swart.vercel.app/api/update-post";
+    const url = "https://backend-crud-sk.vercel.app/api/update-post";
     const config = {
       headers: {
         "content-type": "multipart/form-data",
