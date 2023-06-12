@@ -47,7 +47,7 @@ export default function ShowComponent() {
                                                 <td>{post.title}</td>
                                                 <td>{post.date}</td>
                                                 <td>
-                                                    <img src={'https://crud-backend-swart.vercel.app/api/postimages/'+post.image} style={{width:'100px',height:'100px'}} />
+                                                    <img src={'https://backend-crud-sk.vercel.app/api/postimages/'+post.image} style={{width:'100px',height:'100px'}} />
                                                 </td>
                                                 <td>
                                                     <button id={post._id} onClick={(e)=>handleDelete(post._id,e)} style={{backgroundColor:'blueviolet'}}>Delete</button>
